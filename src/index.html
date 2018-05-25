@@ -5,8 +5,35 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>  
+
+<section id="column">
+<div id="título">
+  <h1>Cifrado Cesar</h1>
+  <h3>Cifre sus mensajes para que gente indeseada no pueda leerlos.</h3>
+  <p id="instr">1. Pon el número que deseas correr el abcedario.</p>
+  <p id="instr">2. Escribe el mensaje.</p>
+  <p id="instr">3. Apreta cifrar o descifrar.</p>
+</div>
+
+<div id="cipherNum">
+  <p style="margin-bottom: 2px">Número de shifts</p><input type="number" id="shiftNumber" style="width: 4em; margin-bottom: 4px">
+</div>
+
+<div id="first-text">
+  <textarea id="source-text" style="width: 223px; margin: 0px; height: 112px;" placeholder="Escriba el texto a cifrar"></textarea>
+</div>
+  
+<div id="second-text">
+  <textarea id="trad-text" style="width: 223px; margin: 0px; height: 112px;" placeholder="Descifrar"></textarea>
+</div>
+
+<button id="btnC">Cifrar</button>
+<button id="btnT">Descifrar</button>
+
+<h6>By Cote.Inc</h6>
+</section>
   <div id="root"></div>
 
   <script src="cipher.js"></script>

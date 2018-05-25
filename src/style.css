@@ -1,1 +1,51 @@
-/* Acá va tu código */
+html {
+    background-image: url("flores.jpg");
+}
+body {
+    height: 100vh;
+
+}
+
+#column {
+    text-align: center;
+    width: 50vh;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#título {
+    font-family: 'Lucida Sans' ;
+    text-align: center;
+    color: grey;         
+}
+
+p {
+    color: gray;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 80%;
+}
+
+h6 {
+    font-family: 'Lucida Sans' ;
+    text-align: center;
+    color: grey;   
+}
+
+#source-text {
+    resize: none;
+}
+
+#trad-text {
+    resize: none;
+}
+
+h1 {
+    font-style: oblique;
+}
+
+#instr {
+    text-align: left;
+}
