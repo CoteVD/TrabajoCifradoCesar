@@ -1,4 +1,7 @@
 /* Acá va tu código */
+const shifts = document.getElementById('sendShifts');
+shifts.addEventListener("click", function(){});
+
 const btnC = document.getElementById('btnC');
 btnC.addEventListener("click", function (encode){})
 
