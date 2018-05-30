@@ -2,7 +2,7 @@ window.cipher = {
   encode: (text, shifts) => {
     /* Acá va tu código */
     let cipEncode = ""; // Aquí se almacenan las letras reemplazadas, va a ser el nuevo mensaje.
-    for (i = 0; i < text.lenght; i++) { // La función va recorriendo cada letra del string hasta llegar a la última.
+    for (var i = 0; i < text.length; i++) { // La función va recorriendo cada letra del string hasta llegar a la última.
       let txt = text.charCodeAt(i); // Aquí se traducen de letras a unicodes. 
         if (65 <= txt && txt <= 90) { // Poniendo rangos de los unicode para poder definir si son mayúsculas, minúsculas o todo lo demás. En éste caso son las mayúsculas.
           cipEncode += String.fromCharCode ((txt - 65 + shifts) % 26 + 65);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo al unicode corresponiente (string o letra) con las mayúsculas.  
