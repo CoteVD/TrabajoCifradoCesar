@@ -5,10 +5,10 @@ window.cipher = {
     for (var i = 0; i < text.length; i++) { // La función va recorriendo cada letra del string hasta llegar a la última.
       let txt = text.charCodeAt(i); // Aquí se traducen de letras a unicodes. 
         if (65 <= txt && txt <= 90) { // Poniendo rangos de los unicode para poder definir si son mayúsculas, minúsculas o todo lo demás. En éste caso son las mayúsculas.
-          cipEncode += String.fromCharCode ((txt - 65 + shifts) % 26 + 65);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo al unicode corresponiente (string o letra) con las mayúsculas.  
+          cipEncode += String.fromCharCode ((txt - 65 + shifts) % 26 + 65);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo a la letra correspondiente en mayúscula.  
         } else if (97 <= txt && txt <= 122) { // En éste caso son las minúsculas.
-          cipEncode += String.fromCharCode ((txt - 97 + shifts)% 26 + 97);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo al unicode correspondiente (string o letra) con las minúsculas. 
-        } else {cipEncode += text.charAt(i)} // Aquí se aplica el caso en que no sean letras.
+          cipEncode += String.fromCharCode ((txt - 97 + shifts)% 26 + 97);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo a la letra correspondiente en minúscula. 
+        } else {cipEncode += text.charAt(i)} // Aquí se aplica el caso en que no sean letras. Se copia directamente el carácter.
     } return cipEncode; // Retorna el nuevo mensaje codificado.
   },
 
