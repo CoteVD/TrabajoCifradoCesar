@@ -7,7 +7,7 @@
 </head>
 
 <body>  
-
+<!-- Sección principal de mi página, columna media con toda la info -->
 <section id="column">
 <div id="título">
   <h1>Cifrado Cesar</h1>
@@ -17,24 +17,29 @@
   <p id="instr">3. Apreta cifrar o descifrar.</p>
 </div>
 
+<!-- Botón para adicionar el número de shifts -->
 <div id="cipherNum">
   <p style="margin-bottom: 2px">Número de shifts</p><input type="number" min = 0 pattern = '^[0-9]+' id="shiftNumber" style="width: 4em; margin-bottom: 4px">
 </div>
 
+<!-- Área de introducción del texto -->
 <div id="first-text">
   <textarea id="source-text" style="width: 223px; margin: 0px; height: 112px;" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
 </div>
-  
+
+<!-- Aquí entra el texto traducido -->
 <div id="second-text">
   <p id="trad-text"></p>
 </div>
 
+<!-- Botones de cifrar y descifrar -->
 <button id="btnC">Cifrar</button>
 <button id="btnT">Descifrar</button>
 
 <h6>By Cote.Inc</h6>
 </section>
 
+<!-- Cosas mágicas que no se tocan (el link al tester y los enlaces a los JS) -->
   <div id="root"></div>
 
   <script src="cipher.js"></script>
