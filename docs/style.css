@@ -1,17 +1,23 @@
-html {
+html, body {
+    height: 100%;
+    width: 100%;
     background-image: url("flores.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-body {
-    height: 100vh;
 
+body {
+    margin: 0%;
 }
 
 #column {
+    height: 100%;
     text-align: center;
-    width: 50vh;
+    width: 35%;
     background-color: pink;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1%;
+    border-radius: 2%;
     margin: auto;
 }
 
@@ -36,18 +42,21 @@ h6 {
 
 #source-text {
     resize: none;
+    width: 70%; 
+    margin: 0px; 
+    height: 112px;
 }
 
 #trad-text {
-   width: 227px; 
-   margin: 0px; 
+   width: 71%; 
+   margin: 0%; 
    height: 114px;
    border: 1px #A9A9A9 solid;
    background-color: white;
    margin-bottom: 4px;
    text-align: left;
    position: relative;
-   left: 45px;
+   left: 14%;
 }
 
 h1 {
@@ -59,13 +68,9 @@ h1 {
 }
 
 #btnC {
-    border-radius: 5px;
+    border-radius: 12%;
 }
 
 #btnT {
-    border-radius: 5px;
-}
-
-#sendShifts {
-    border-radius: 5px;
+    border-radius: 12%;
 }
