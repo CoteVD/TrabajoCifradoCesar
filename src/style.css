@@ -39,7 +39,13 @@ h6 {
 }
 
 #trad-text {
-    resize: none;
+   width: 223px; 
+   margin: 0px; 
+   height: 112px;
+   border: 1px #A9A9A9 solid;
+   background-color: white;
+   margin-bottom: 4px;
+   text-align: left;
 }
 
 h1 {

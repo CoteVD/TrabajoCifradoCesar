@@ -1,18 +1,17 @@
 /* Acá va tu código */
 window.onload = function() {
 
-const btnS = document.getElementById('sendShifts');
-btnS.addEventListener("click", function(encode){
-  let shifts = document.getElementById("shiftNumber").value;    
-});
-
 const btnC = document.getElementById('btnC');
-btnC.addEventListener("click", function (encode){
+btnC.addEventListener("click", function (){
   let text = document.getElementById("source-text").value;
+  let shifts = document.getElementById("shiftNumber").value;
+  window.cipher.encode(text, shifts);
 });
 
 const btnT = document.getElementById('btnT');
-btnT.addEventListener("click", function (decode){
+btnT.addEventListener("click", function (){
   let text = document.getElementById("source-text").value;
+  let shifts = document.getElementById("shiftNumber").value;
+  window.cipher.decode(text, shifts);
 });
 }

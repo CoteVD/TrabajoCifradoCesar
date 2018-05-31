@@ -8,8 +8,8 @@ window.cipher = {
           cipEncode += String.fromCharCode ((txt - 65 + shifts) % 26 + 65);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo a la letra correspondiente en mayúscula.  
         } else if (97 <= txt && txt <= 122) { // En éste caso son las minúsculas.
           cipEncode += String.fromCharCode ((txt - 97 + shifts)% 26 + 97);// Aquí se aplica la fórmula para obtener el nuevo número, y traspasarlo a la letra correspondiente en minúscula. 
-        } else {cipEncode += text.charAt(i)} // Aquí se aplica el caso en que no sean letras. Se copia directamente el carácter.
-    } return cipEncode; // Retorna el nuevo mensaje codificado.
+        } else {cipEncode += text.charAt(i)}; // Aquí se aplica el caso en que no sean letras. Se copia directamente el carácter.
+    } return document.getElementById("trad-text").innerHTML = cipEncode; // Retorna el nuevo mensaje codificado.
   },
 
   decode: (text, shifts) => {
