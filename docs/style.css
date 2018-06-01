@@ -34,6 +34,11 @@ p {
     font-size: 80%;
 }
 
+#shiftNumber {
+    margin-bottom: 1%;
+    width: 10%;
+}
+
 h6 {
     font-family: 'Lucida Sans' ;
     text-align: center;
@@ -53,7 +58,7 @@ h6 {
    height: 114px;
    border: 1px #A9A9A9 solid;
    background-color: white;
-   margin-bottom: 4px;
+   margin-bottom: 1%;
    text-align: left;
    position: relative;
    left: 14%;
