@@ -12,4 +12,10 @@ El cifrado César es un tipo de cifrado por sustitución en el que una letra en 
 1. Pegue o escriba el mensaje a decodificar.
 2. Ponga el **mismo número que utilizó para codificar el mensaje** en el input. **Ésto es muy importante**.
 ¡Disfrute su mensaje decodificado!
+### Lenguajes de programación
+* Javascript ES6
+* HTML5
+* CSS3
+### Librería
+* Bootstrap 4
 ## Deploy link
