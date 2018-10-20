@@ -6,11 +6,12 @@ El cifrado César es un tipo de cifrado por sustitución en el que una letra en 
 ### Para codificar:
 1. Escriba su mensaje en el espacio dado para ello.
 2. Elija en el input las veces que desea que se corra el abecedario.
-3. Presione el botón codificar.
-¡Disfrute su mensaje codificado!
+3. Presione el botón Cifrar.
+¡Disfrute su mensaje codificado!.
 ### Para decodificar:
 1. Pegue o escriba el mensaje a decodificar.
 2. Ponga el **mismo número que utilizó para codificar el mensaje** en el input. **Ésto es muy importante**.
+3. Presione el botón Descifrar.
 ¡Disfrute su mensaje decodificado!
 ### Lenguajes de programación
 * Javascript ES6
