@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center topMargin">
       <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
-        <h1 id="título">Cifrado César</h1>
+        <p class="titulo">Cifrado César</p>
       </div>
     </div>
   </div>
@@ -32,17 +32,17 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <p class="desplazamientos mb-0">Número de desplazamientos</p>
-            <input class="my-2" type="number" min="0" pattern="^[0-9]+" id="shiftNumber">
+            <input class="my-2 shift" type="number" min="0" pattern="^[0-9]+" id="shiftNumber">
           </div>
         </div>
         <p class="instr">2. Escriba el mensaje a codificar o decodificar.</p>
         <!-- Área de introducción del texto -->
         <div class="row justify-content-center">
           <div class="col-10">
-            <textarea id="sourceText" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
+            <textarea class="first" id="sourceText" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
           </div>
         </div>
-        <p class="instr">3. Apreta cifrar o descifrar.</p>
+        <p class="instr mt-2 mb-0">3. Clickee en cifrar o descifrar según requiera.</p>
         <!-- Botones de cifrar y descifrar -->
         <div class="row justify-content-center">
           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5 text-center">
@@ -56,7 +56,7 @@
         <!-- Aquí entra el texto traducido -->
         <div class="row justify-content-center">
           <div class="col-10">
-            <textarea class="mb-5" id="finalTxt" disabled></textarea>
+            <textarea class="mb-5 last" id="finalTxt" disabled></textarea>
           </div>
         </div>
       </div>
