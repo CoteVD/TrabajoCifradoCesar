@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>Cifrado Cesar</title>
+  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
+  <link rel="icon" type="image/gif/png" href="./icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Parisienne|Lobster+Two|K2D" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>  
-<!-- Sección principal de mi página, columna media con toda la info -->
-<section id="column">
-<div id="título">
-  <h1>Cifrado Cesar</h1>
-  <h3>Cifra tus mensajes para que sólo tú puedas leerlos.</h3>
-    <p class="instr">1. Escribe el número de desplazamientos.</p>
-    <p class="instr">2. Escribe el mensaje para cifrar o descifrar sin acentos y cambiando la ñ por n.</p>
-    <p class="instr">3. Apreta cifrar o descifrar.</p>
-</div>
+<body>
+  <!-- Sección principal de mi página, columna media con toda la info -->
+  <div class="container-fluid">
+    <div class="row justify-content-center topMargin">
+      <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+        <h1 id="título">Cifrado César</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <p class="instr">Cifre sus mensajes para que sólo los que usted quiera puedan descifrarlos.</p>
+        <hr>
+        <p class="instr"><u>Instrucciones</u></p>
+        <p class="instr">1. Ingrese el número de desplazamientos.</p>
+        <!-- Botón para adicionar el número de shifts -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <p class="desplazamientos mb-0">Número de desplazamientos</p>
+            <input class="my-2" type="number" min="0" pattern="^[0-9]+" id="shiftNumber">
+          </div>
+        </div>
+        <p class="instr">2. Escriba el mensaje a codificar o decodificar.</p>
+        <!-- Área de introducción del texto -->
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <textarea id="sourceText" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
+          </div>
+        </div>
+        <p class="instr">3. Apreta cifrar o descifrar.</p>
+        <!-- Botones de cifrar y descifrar -->
+        <div class="row justify-content-center">
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5 text-center">
+            <button type="button" class="btn p-3 mt-3 mb-4" id="btnC">Cifrar</button>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5 text-center">
+            <button type="button" class="btn p-3 mt-3 mb-4" id="btnT">Descifrar</button>
+          </div>
+        </div>
+        <p class="instr">4. ¡Disfrute su mensaje!</p>
+        <!-- Aquí entra el texto traducido -->
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <textarea class="mb-5" id="finalTxt" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- Botón para adicionar el número de shifts -->
-<div id="cipherNum">
-  <p id="shiftstyle">Número de desplazamientos</p><input type="number" min = "0" pattern = "^[0-9]+" id="shiftNumber">
-</div>
 
-<!-- Área de introducción del texto -->
-<div id="first-text">
-  <textarea id="source-text" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
-</div>
 
-<!-- Aquí entra el texto traducido -->
-<div id="second-text">
-  <p id="trad-text"></p>
-</div>
 
-<!-- Botones de cifrar y descifrar -->
-<button id="btnC">Cifrar</button>
-<button id="btnT">Descifrar</button>
 
-<h6>By Cote.Inc</h6>
-</section>
-
-<!-- Cosas mágicas que no se tocan (el link al tester y los enlaces a los JS) -->
+  <!-- Cosas mágicas que no se tocan (el link al tester y los enlaces a los JS) -->
   <div id="root"></div>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>
