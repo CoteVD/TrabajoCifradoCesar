@@ -5,7 +5,7 @@ El cifrado César es un tipo de cifrado por sustitución en el que una letra en 
 ## Versión desktop
 ![image](https://github.com/CoteVD/TrabajoCifradoCesar/blob/master/desktop.png)
 ## Versión mobile
-![cifradocesar](https://user-images.githubusercontent.com/38705931/47428441-aab00380-d769-11e8-9d70-cf9b96679f85.png)
+![cifradocesar](https://user-images.githubusercontent.com/38705931/47429324-6eca6d80-d76c-11e8-97bb-2e5428d04ce8.png)
 Desarrollado para [Laboratoria](www.laboratoria.la)
 ## Instrucciones
 ### Para codificar:
