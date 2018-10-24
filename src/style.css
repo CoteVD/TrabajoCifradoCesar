@@ -1,15 +1,17 @@
 body {
-  background-image: linear-gradient(pink, orange);
+  background: linear-gradient(#ff69b4, #ff8a0b);
+  background-size: cover;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
 .titulo {
-  font-family: "Parisienne", cursive;
+  font-family: "Lobster Two", cursive;
   text-align: center;
-  color: grey;
-  font-size: 5rem;
+  color: white;
 }
 
 .topMargin {
@@ -19,20 +21,21 @@ body {
 .instr {
   font-family: "Lobster Two", cursive;
   text-align: center;
-  color: grey;
-  font-size: 139%;
+  color: white;
 }
 
 .desplazamientos {
   font-family: "K2D", sans-serif;
-  color: grey;
+  color: white;
   text-align: center;
 }
 
 .shift {
   width: 4rem;
   border-radius: 5px;
-  margin-left: 46%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .first {
@@ -40,9 +43,8 @@ body {
   border: 1px grey;
   background-color: white;
   height: 9rem;
-  width: 80%;
+  width: 100%;
   border-radius: 12px;
-  margin-left: 10%;
   padding: 1rem;
 }
 
@@ -51,10 +53,10 @@ body {
   border: 1px grey;
   background-color: white;
   height: 9rem;
-  width: 80%;
+  width: 100%;
   border-radius: 12px;
-  margin-left: 10%;
   padding: 1rem;
+  margin-bottom: 6rem;
 }
 
 .instr {
@@ -64,23 +66,18 @@ body {
 .btn {
   width: 80%;
   border-radius: 12px;
-  background-image: linear-gradient(palevioletred, orangered);
+  background-color: #ff69b4;
   font-family: "K2D", sans-serif;
   color: white;
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  body {
-    position: fixed;
-  }
-  .titulo {
-    font-size: 9rem !important;
-  }
-  .instr {
-    font-size: 3rem !important;
-  }
-  .desplazamientos {
-    font-size: 2rem !important;
+@media (min-width: 1025px) {
+  .first,
+  .last {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
