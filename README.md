@@ -2,9 +2,9 @@
 ## Introducción
 El presente programa, te permite codificar tus mensajes en base al cifrado César. Pero, ¿qué es el cifrado César?.
 El cifrado César es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
-## Versión desktop
+## Version desktop
 ![image](https://github.com/CoteVD/TrabajoCifradoCesar/blob/master/desktop.png)
-## Versión mobile
+## Version mobile
 ![cifradocesar](https://user-images.githubusercontent.com/38705931/47429324-6eca6d80-d76c-11e8-97bb-2e5428d04ce8.png)
 Desarrollado para [Laboratoria](www.laboratoria.la)
 ## Instrucciones
